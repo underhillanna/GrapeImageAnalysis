@@ -29,7 +29,7 @@ This process is carried out using [Food Color Inspector](http://www.cofilab.com/
 
    *  First, load the first image in your training set (File > Open Image).  It's worth noting here that large images don't work particularly well (you'll get a warning that says 'This image is too large and will be resampled'); I used 600 x 900px, 16-bit TIFF files.  Here's an example: 
    
-   ![Cluster image](https://github.umn.edu/under188/GrapeImageAnalysis/blob/master/GE1025_036_3_2_resize.tif)
+   ![Cluster image](https://github.umn.edu/under188/GrapeImageAnalysis/blob/master/GE1025_036_3_2_resize.png)
    
    * To start your segmentation, use the Background 1 class (0) and select a square of background color with your cursor.  If you do just a point sample (ie, clicking on the background instead of selecting a square) the process will lag.  On the lower right-hand side, you'll now see a black image - this is the current segmentation of the image.  As you keep going, the segmentation will continue in this thumbnail.
    * To continue segmenting, switch to Class 2 (or whichever class you want) and select another region of interest - either berry or stem.  Again, select a square.  Now, everything within this classification will show up red in your segmentation - if you'd like to change it to a different color, you can click on the color square next to the class name.  You can do this step only once, but you can also keep adding colors to Class 2, and it can help refine your segmentation by making it more accurate.  
