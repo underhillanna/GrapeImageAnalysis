@@ -19,6 +19,7 @@ To use this set of programs, you'll need:
 This process is designed to work on photos of grape clusters that look like this:
 
 To achieve this quality, here's what the setup looked like:
+![Setup](github.umn.edu/under188/GrapeImageAnalysis/blob/master/ImageCaptureSetup.tif)
 
 Image quality is important, as it will affect your segmentation quality later (which will affect the accuracy of data extracted from those images).
 
