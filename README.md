@@ -36,6 +36,14 @@ This process is carried out using [Food Color Inspector](http://www.cofilab.com/
    * To segment multiple images using your training set, open the desired training set then go to File > Segment Folder.  You'll select a folder with images to segment, then choose a location to save the finished files.  It's a good idea to go back and review the images done by bulk, because sometimes there are differences in images and the segmentation isn't accurate.  
 
 ## Using ImageProcess
+This script was written for the processing of segemented images as produced above.  I make no claims of well-written code or functionality in all situtations; although I hope it works for you, there is a chance it won't.  In particular, some types of segmented images cannot be processed by the program.  Those types of images include:
+  * Images where the cluster extends past the bottom of the image
+  * Images that contain disconnected shapes
+  * Images with a high number of disconnected pixels
+  
+If a parameter cannot be extracted from an image, it will not be stored in the data array, leading to an error when trying to write the output table.  Noting the number of the image causing the issue will aid in diagnosing the problem.  
+
+Both portrait- and landscape-aligned images can be processed.  The program only looks for TIFF files as input, though you could rewrite to use a file type of your choice.  There is no GUI at the moment; make sure to set the working directory to the location of your image files beforehand.  
 
 ## Using DataProcessing
 
