@@ -35,6 +35,8 @@ This process is carried out using [Food Color Inspector](http://www.cofilab.com/
    * If you ever add a step that you want to delete, just double-click on the RGB value and follow the prompt to remove that step.  If you ever try to add a step with the same color as one that already exists, it will give you a warning message.  If you ever want to start the segmentation over completely, just go to File > New Segmentation.
    * When you're done segmenting an image, go to File > Save Training to save the class steps you've created.  To save the segmented image itself, go to File > Save Segmented Image.  The program will ask you to select columns for each CSV file; this exports the color data and pixel percentages.  Select as many or as few characteristics as you'd like.  
    * To segment multiple images using your training set, open the desired training set then go to File > Segment Folder.  You'll select a folder with images to segment, then choose a location to save the finished files.  It's a good idea to go back and review the images done by bulk, because sometimes there are differences in images and the segmentation isn't accurate.  
+   
+The output of the program is a 600 x 900 PNG image.
 
 ## Using ImageProcess
 This script was written for the processing of segemented images as produced above.  I make no claims of well-written code or functionality in all situtations; although I hope it works for you, there is a chance it won't.  In particular, some types of segmented images cannot be processed by the program.  Those types of images include:
@@ -44,9 +46,12 @@ This script was written for the processing of segemented images as produced abov
   
 If a parameter cannot be extracted from an image, it will not be stored in the data array, leading to an error when trying to write the output table.  Noting the number of the image causing the issue will aid in diagnosing the problem.  
 
-Both portrait- and landscape-aligned images can be processed.  The program only looks for TIFF files as input, though you could rewrite to use a file type of your choice.  There is no GUI at the moment; make sure to set the working directory to the location of your image files beforehand.  
+Both portrait- and landscape-aligned images can be processed.  The program only looks for PNG files as input, though you could rewrite to use a file type of your choice.  There is no GUI at the moment; make sure to set the working directory to the location of your image files beforehand.  The code is commented and some parameters - like the size of the median filter - can be changed to fit your specifications.
+
+To use the program, simply run the code in MATLAB using the correct directory.  An output file will be written to the same directory when analysis is complete.  The image results will be listed in the file in the order in which they were processed.  
 
 ## Using DataProcessing
+To process the data 
 
 ## Other information
 ### Who are these programs for?
