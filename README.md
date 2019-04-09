@@ -18,7 +18,7 @@ To use this set of programs, you'll need:
 This process is designed to work on photos of grape clusters that look like this:
 
 To achieve this quality, here's what the setup looked like:
-![Setup](https://github.umn.edu/under188/GrapeImageAnalysis/blob/master/ImageCaptureSetup.png)
+![Setup](https://github.com/underhillanna/GrapeImageAnalysis/blob/master/ImageCaptureSetup.png)
 
 Image quality is important, as it will affect your segmentation quality later (which will affect the accuracy of data extracted from those images).
 
@@ -29,13 +29,13 @@ This process is carried out using [Food Color Inspector](http://www.cofilab.com/
 
    *  First, load the first image in your training set (File > Open Image).  It's worth noting here that large images don't work particularly well (you'll get a warning that says 'This image is too large and will be resampled'); I used 600 x 900px, 16-bit TIFF files.  Here's an example: 
    
-   ![Cluster image](https://github.umn.edu/under188/GrapeImageAnalysis/blob/master/GE1025_036_3_2_resize.png)
+   ![Cluster image](https://github.com/underhillanna/GrapeImageAnalysis/blob/master/GE1025_036_3_2_resize.png)
    
    * To start your segmentation, use the Background 1 class (0) and select a square of background color with your cursor.  If you do just a point sample (ie, clicking on the background instead of selecting a square) the process will lag.  On the lower right-hand side, you'll now see a black image - this is the current segmentation of the image.  As you keep going, the segmentation will continue in this thumbnail.
    * To continue segmenting, switch to Class 2 (or whichever class you want) and select another region of interest - either berry or stem.  Again, select a square.  Now, everything within this classification will show up red in your segmentation - if you'd like to change it to a different color, you can click on the color square next to the class name.  You can do this step only once, but you can also keep adding colors to Class 2, and it can help refine your segmentation by making it more accurate.  
    * Continue segmenting with remaining classes.  The goal is to have as accurate a segmentation as possible - that is, berries, stem, and background all classified correctly.  Here's another example: 
    
-   ![Segmented image](https://github.umn.edu/under188/GrapeImageAnalysis/blob/master/GE1025_036_3_2_segmented_resize.png)
+   ![Segmented image](https://github.com/underhillanna/GrapeImageAnalysis/blob/master/GE1025_036_3_2_segmented_resize.png)
    
    * If you ever add a step that you want to delete, just double-click on the RGB value and follow the prompt to remove that step.  If you ever try to add a step with the same color as one that already exists, it will give you a warning message.  If you ever want to start the segmentation over completely, just go to File > New Segmentation.
    * When you're done segmenting an image, go to File > Save Training to save the class steps you've created.  To save the segmented image itself, go to File > Save Segmented Image.  The program will ask you to select columns for each CSV file; this exports the color data and pixel percentages.  Select as many or as few characteristics as you'd like.  
