@@ -19,7 +19,7 @@ To use this set of programs, you'll need:
 This process is designed to work on photos of grape clusters that look like this:
 
 To achieve this quality, here's what the setup looked like:
-![Setup](https://imgur.com/a/kOXNbnW)
+![Setup](https://imgur.com/a/kOXNbnW?raw=true)
 
 Image quality is important, as it will affect your segmentation quality later (which will affect the accuracy of data extracted from those images).
 
