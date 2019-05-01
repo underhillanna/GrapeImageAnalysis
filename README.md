@@ -3,9 +3,9 @@ Programs for analyzing grape cluster components (and their accompanying instruct
 
 ## Getting started
 0. Read this read me!  It contains valuable information (and I spent valuable time writing it up for you, after all).
-1. Ensure you have the correct [software and packages installed](https://github.umn.edu/underhillanna/GrapeImageAnalysis/blob/master/README.md#software-and-package-needs).
-2. [Prepare](https://github.umn.edu/underhillanna/GrapeImageAnalysis/blob/master/README.md#image-preparation) and [segment](https://github.umn.edu/underhillanna/GrapeImageAnalysis/blob/master/README.md#image-segmentation) your images.
-3. Use [ImageProcess](https://github.umn.edu/underhillanna/GrapeImageAnalysis/blob/master/README.md#using-imageprocess) to extract data from your segmented images.
+1. Ensure you have the correct [software and packages installed](https://github.com/underhillanna/GrapeImageAnalysis/blob/master/README.md#software-and-package-needs).
+2. [Prepare](https://github.com/underhillanna/GrapeImageAnalysis/blob/master/README.md#image-preparation) and [segment](https://github.com/underhillanna/GrapeImageAnalysis/blob/master/README.md#image-segmentation) your images.
+3. Use [ImageProcess](https://github.com/underhillanna/GrapeImageAnalysis/blob/master/README.md#using-imageprocess) to extract data from your segmented images.
 
 ## Software and package needs
 To use this set of programs, you'll need:
