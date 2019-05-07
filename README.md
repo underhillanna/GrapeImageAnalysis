@@ -1,6 +1,8 @@
 # GrapeImageAnalysis
 Programs for analyzing grape cluster components (and their accompanying instructions).
 
+This work is licensed under [CRAPL](http://matt.might.net/articles/crapl/) - it is not perfect (and, in fact, may present you with bugs or other difficulties), but I believe that available code is better than perfect code.
+
 ## Getting started
 0. Read this read me!  It contains valuable information (and I spent valuable time writing it up for you, after all).
 1. Ensure you have the correct [software and packages installed](https://github.com/underhillanna/GrapeImageAnalysis/blob/master/README.md#software-and-package-needs).
