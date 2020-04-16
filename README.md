@@ -45,8 +45,11 @@ This process is carried out using [Food Color Inspector](http://www.cofilab.com/
    
 The output of the program is a 600 x 900 PNG image.
 
-## Using ImageProcess
-This script was written for the processing of segemented images as produced above.  I make no claims of well-written code or functionality in all situtations; although I hope it works for you, there is a chance it won't.  In particular, some types of segmented images cannot be processed by the program.  Those types of images include:
+## Using ColorProcess for cluster color
+This R script was written for extracting color class values from the CSV files output along with segmented images from Food Color Inspector.  It is an example showing how to extract RGB values from two color classes that were defined in segmentation.  After R import, values can be averaged as desired.  
+
+## Using ImageProcess for cluster compactness
+This MATLAB script was written for the processing of segemented images for cluster compactness as produced above.  I make no claims of well-written code or functionality in all situtations; although I hope it works for you, there is a chance it won't.  In particular, some types of segmented images cannot be processed by the program.  Those types of images include:
   * Images where the cluster extends past the bottom of the image
   * Images that contain disconnected shapes
   * Images with a high number of disconnected pixels
