@@ -4,7 +4,7 @@ Programs for analyzing grape cluster components (and their accompanying instruct
 This work is licensed under [CRAPL](http://matt.might.net/articles/crapl/) - it is not perfect (and, in fact, may present you with bugs or other difficulties), but I believe that available code is better than perfect code.
 
 ## Getting started
-0. Read this read me!  It contains valuable information (and I spent valuable time writing it up for you, after all).
+0. Read this read me - it contains valuable information.
 1. Ensure you have the correct [software and packages installed](https://github.com/underhillanna/GrapeImageAnalysis/blob/master/README.md#software-and-package-needs).
 2. [Prepare](https://github.com/underhillanna/GrapeImageAnalysis/blob/master/README.md#image-preparation) and [segment](https://github.com/underhillanna/GrapeImageAnalysis/blob/master/README.md#image-segmentation) your images.
 3. Use [ImageProcess](https://github.com/underhillanna/GrapeImageAnalysis/blob/master/README.md#using-imageprocess) to extract data from your segmented images.
@@ -24,7 +24,7 @@ To achieve this quality, here's what the setup looked like:
 
 Image quality is important, as it will affect your segmentation quality later (which will affect the accuracy of data extracted from those images).
 
-Images were captured as RAW files (.NEF) by a tripod-mounted Nikon D7200 camera, then color-corrected using [RawTherapee](https://rawtherapee.com/) and compressed into 16-bit TIFF files.  Illumination was provided by two Philips 34W, 3500 K fluorescent lights.  For image capture, I'd recommend using a program like [Gphoto2](http://gphoto.org/) - running from the command line means no messing with the camera, no tedious data transfers, and no re-naming files afterward. 
+Images were captured as RAW files (.NEF) by a tripod-mounted Nikon D7200 camera, then color-corrected using [RawTherapee](https://rawtherapee.com/) and compressed into 16-bit TIFF files.  Illumination was provided by two Philips 34W, 3500 K fluorescent lights.  For image capture, I'd recommend using a program like [gPhoto2](http://gphoto.org/) - running from the command line means no messing with the camera, no tedious data transfers, and no re-naming files afterward. 
 
 ## Image segmentation
 This process is carried out using [Food Color Inspector](http://www.cofilab.com/portfolio/food-color-inspector/), which is written and maintained by the COFILAB at the Instituto Valenciano de Investigaciones Agrarias (IVIA).  Their website is a bit sparce on documentation, so here are a few steps to get started.
